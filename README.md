@@ -452,17 +452,18 @@ python detection_billet.py --billet <diagonal> <height_left> <height_right> <mar
 - Jupyter Notebook
 
 ---
+## 🖥️ Interface Streamlit
 
-## 📁 Structure du projet
+Une interface utilisateur a été développée avec Streamlit afin de permettre
+l'utilisation du modèle sans passer par le terminal.
 
-```text
-├── notebook.ipynb
-├── detection_billet.py
-├── modele_detection_billets.joblib
-├── billets.csv
-├── billets_production.csv
-└── README.md
-```
+L'utilisateur peut importer un fichier CSV contenant les caractéristiques
+géométriques des billets et obtenir directement les prédictions du modèle.
+
+### Lancer l'application en local
+
+```bash
+streamlit run app.py
 
 ---
 
